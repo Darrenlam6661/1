@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Darren LAM - Professional Academic Writing Services</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+        header {
+            background-color: #003366;
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+        }
+        .language-select {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+        .language-select select {
+            padding: 5px;
+            font-size: 16px;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            margin-bottom: 60px;
+        }
+        h1, h2 {
+            color: #003366;
+        }
+        h1 {
+            margin-top: 0;
+        }
+        .services, .education, .disciplines, .contact {
+            margin-top: 20px;
+        }
+        .services ul, .education ul, .disciplines ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .services li, .education li, .disciplines li {
+            margin: 10px 0;
+            font-size: 16px;
+        }
+        footer {
+            background-color: #003366;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            left: 0;
+        }
+        .contact {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .contact h2 {
+            color: #003366;
+        }
+        .contact p {
+            font-size: 16px;
+        }
+        .contact a {
+            color: #003366;
+            text-decoration: none;
+        }
+        .contact a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Darren LAM</h1>
+        <p>Professional Academic Writing Services for University and College Students</p>
+        <div class="language-select">
+            <select id="language-select">
+                <option value="en">English</option>
+                <option value="zh">中文</option>
+                <!-- Add more languages here -->
+            </select>
+        </div>
+    </header>
+    <div class="container">
+        <section>
+            <h2>About Me</h2>
+            <p>Hello, I am Darren LAM, currently pursuing a Master’s degree in Financial Technology at The University of Hong Kong. My academic journey has provided me with a deep understanding of both financial and technological theories and practices. To balance my studies with financial needs, I offer high-quality academic writing services for university and college students.</p>
+            <p>As a current graduate student, I understand the challenges faced by students and provide tailored assistance to meet the highest academic standards. Whether you need help with assignments, essays, or complete dissertations, my goal is to deliver detailed, well-researched, and professional writing support to help you achieve your academic goals. I am committed to supporting your academic efforts with quality, integrity, and professionalism.</p>
+        </section>
+        <section class="education">
+            <h2>Education and Background</h2>
+            <ul>
+                <li>Master’s in Financial Technology, The University of Hong Kong</li>
+                <li>Bachelor’s in International Business and Global Management, The University of Hong Kong</li>
+            </ul>
+        </section>
+        <section class="services">
+            <h2>My Services</h2>
+            <ul>
+                <li>Assignment writing for university and college students</li>
+                <li>Essay writing</li>
+                <li>Dissertation writing</li>
+                <li>Editing and proofreading</li>
+                <li>Academic paper improvement suggestions</li>
+            </ul>
+        </section>
+        <section class="disciplines">
+            <h2>Disciplines Covered</h2>
+            <ul>
+                <li>Financial Management</li>
+                <li>Investment Analysis</li>
+                <li>Corporate Finance</li>
+                <li>International Business</li>
+                <li>Business Strategy</li>
+                <li>Economics</li>
+                <li>Accounting</li>
+                <li>Marketing</li>
+                <li>Human Resource Management</li>
+                <li>Operations Management</li>
+                <li>Business Analytics</li>
+                <!-- Add more disciplines as needed -->
+            </ul>
+        </section>
+        <section class="contact">
+            <h2>Contact Me</h2>
+            <p>If you have any questions or need further assistance, feel free to reach out to me via Telegram:</p>
+            <p><strong>Telegram ID:</strong> <a href="https://t.me/gdscvve" target="_blank">gdscvve</a></p>
+            <!-- Optional: Add a contact form here -->
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 Darren LAM. All rights reserved.</p>
+    </footer>
+<script>
+    document.getElementById('language-select').addEventListener('change', function() {
+        const selectedLanguage = this.value;
+        if (selectedLanguage === 'en') {
+            window.location.href = 'index.html'; // Redirect to English version
+        } else if (selectedLanguage === 'zh') {
+            window.location.href = 'index_zh.html'; // Redirect to Chinese version
+        }
+    });
+
+    // Set the correct language option based on the current page
+    document.addEventListener('DOMContentLoaded', function() {
+        const langSelect = document.getElementById('language-select');
+        if (window.location.pathname.includes('index_zh.html')) {
+            langSelect.value = 'zh';
+        } else {
+            langSelect.value = 'en';
+        }
+    });
+</script>
+
+</body>
+</html>

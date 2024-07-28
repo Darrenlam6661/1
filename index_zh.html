@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>達倫·林 - 專業學術寫作服務</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+        header {
+            background-color: #003366;
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+        }
+        .language-select {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+        .language-select select {
+            padding: 5px;
+            font-size: 16px;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            margin-bottom: 60px;
+        }
+        h1, h2 {
+            color: #003366;
+        }
+        h1 {
+            margin-top: 0;
+        }
+        .services, .education, .disciplines, .contact {
+            margin-top: 20px;
+        }
+        .services ul, .education ul, .disciplines ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .services li, .education li, .disciplines li {
+            margin: 10px 0;
+            font-size: 16px;
+        }
+        footer {
+            background-color: #003366;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            left: 0;
+        }
+        .contact {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .contact h2 {
+            color: #003366;
+        }
+        .contact p {
+            font-size: 16px;
+        }
+        .contact a {
+            color: #003366;
+            text-decoration: none;
+        }
+        .contact a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>達倫·林</h1>
+        <p>專業學術寫作服務 - 為大學及專上學生提供</p>
+        <div class="language-select">
+            <select id="language-select">
+                <option value="en">English</option>
+                <option value="zh" selected>中文</option>
+                <!-- Add more languages here -->
+            </select>
+        </div>
+    </header>
+    <div class="container">
+        <section>
+            <h2>關於我</h2>
+            <p>您好，我是達倫·林，目前在香港大學攻讀金融科技碩士學位。我的學術旅程使我對金融和技術理論及實踐有了深刻的了解。為了平衡學業和經濟需求，我提供高品質的學術寫作服務，專為大學和專上學生提供支持。</p>
+            <p>作為一名在讀碩士生，我了解學生面臨的挑戰，並提供量身定制的幫助，以滿足最高的學術標準。無論您需要作業、論文還是完整的畢業論文幫助，我的目標是提供詳細、研究充分且專業的寫作支持，幫助您達成學術目標。我致力於以質量、誠信和專業支持您的學術努力。</p>
+        </section>
+        <section class="education">
+            <h2>學歷和背景</h2>
+            <ul>
+                <li>香港大學金融科技碩士</li>
+                <li>香港大學國際商業及環球管理學士</li>
+            </ul>
+        </section>
+        <section class="services">
+            <h2>我的服務</h2>
+            <ul>
+                <li>為大學和專上學生提供作業代寫</li>
+                <li>論文寫作</li>
+                <li>畢業論文寫作</li>
+                <li>編輯和校對</li>
+                <li>學術論文改進建議</li>
+            </ul>
+        </section>
+        <section class="disciplines">
+            <h2>涵蓋學科</h2>
+            <ul>
+                <li>財務管理</li>
+                <li>投資分析</li>
+                <li>公司金融</li>
+                <li>國際商業</li>
+                <li>商業策略</li>
+                <li>經濟學</li>
+                <li>會計學</li>
+                <li>市場營銷</li>
+                <li>人力資源管理</li>
+                <li>運營管理</li>
+                <li>商業分析</li>
+                <!-- Add more disciplines as needed -->
+            </ul>
+        </section>
+        <section class="contact">
+            <h2>聯絡我</h2>
+            <p>如果您有任何問題或需要進一步的協助，隨時通過 Telegram 聯絡我：</p>
+            <p><strong>Telegram ID:</strong> <a href="https://t.me/gdscvve" target="_blank">gdscvve</a></p>
+            <!-- Optional: Add a contact form here -->
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 Darren LAM. All rights reserved.</p>
+    </footer>
+<script>
+    document.getElementById('language-select').addEventListener('change', function() {
+        const selectedLanguage = this.value;
+        if (selectedLanguage === 'en') {
+            window.location.href = 'index.html'; // Redirect to English version
+        } else if (selectedLanguage === 'zh') {
+            window.location.href = 'index_zh.html'; // Redirect to Chinese version
+        }
+    });
+
+    // Set the correct language option based on the current page
+    document.addEventListener('DOMContentLoaded', function() {
+        const langSelect = document.getElementById('language-select');
+        if (window.location.pathname.includes('index_zh.html')) {
+            langSelect.value = 'zh';
+        } else {
+            langSelect.value = 'en';
+        }
+    });
+</script>
+
+</body>
+</html>
